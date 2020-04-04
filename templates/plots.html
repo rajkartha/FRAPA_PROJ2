@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>FAST FOOD</title>
+
+        <!-- Boostrap Stylesheet -->
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" media="screen">
+
+        <!-- Our own CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/styles.css" media="screen">
+    </head>
+
+    <body>
+        <!-- Start of navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid navbar-custom">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="col-xs-9 phone-nav">
+                            <!-- <a class="navbar-brand" href="#" id="logo">HOME</a> -->
+                            <a class="navbar-brand" href="index" id="logo">HOME</a>
+                        </div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                          
+                          <li><a href="plots">Plots</a></li>
+                          <li><a href="geo/geomapping">Geomapping</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- End of navbar -->
+        <div class="container">
+            <section class="row">
+                <div class="col-md-7">
+                    <article class="description-content">
+                        <h1 class="description-header">Total FF Sales by Category</h1>
+                        <h4 class="description-subtitle">In Millions</h4>
+                        <hr class="description-hr" />
+                    </article>
+                </div>
+                <div class="col-md-5">
+                  <div id="pie"></div>
+                </div> 
+                <div class="col-md-4">
+                    <article class="description-content">
+                        <div class="well">
+                            <h5><strong>TOP RESTAURANTS:</strong></h5>
+                            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                        </div>
+                    </article>  
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Restaurant</h3></div>
+                        <div id="sample-metadata" class="panel-body"></div>
+                    </div> 
+                </div>  
+            </section>
+        </div>
+        <!-- End of container -->
+        <!-- jQuery CDN -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- Bootstrap CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <!-- <script src="/static/scripts/jquery-1.10.2.js"></script> -->
+        <script src="/static/scripts/bootstrap.js"></script>
+        <!-- <script src="/static/scripts/respond.js"></script> -->
+        <script src="/static/scripts/plots.js"></script>
+    </body>
+</html>
