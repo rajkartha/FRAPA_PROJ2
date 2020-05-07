@@ -1,1 +1,1 @@
-web: gunicorn frapa_original:app:app
+web: gunicorn frapaproj2:app
